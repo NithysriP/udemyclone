@@ -15,6 +15,9 @@ body{
     position: sticky;
     top: 0;
     background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .navabar__s1__title{
     color: #d110c4;
@@ -42,6 +45,23 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+/*My learning popup */
+.mylearning{
+position: relative;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 .categories{
     display: flex;
